@@ -22,10 +22,12 @@ class BaseModel:
                     value = datetime.strptime(kwargs[key], f)
                 if key != '__class__':
                     setattr(self, key, value)
+
     def save(self):
         """save def
         """
         self.updated_at = datetime.now()
+
     def to_dict(self):
         """ to_dict def
         """
@@ -42,6 +44,7 @@ class BaseModel:
         new_dict['__class__'] = self.__class__.__name__
 
         return new_dict
+
     def __str__(self):
         """ str def
         """
