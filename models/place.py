@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 """
-Class Place inherits from BaseModel
+Class Place
 """
-
-
-import uuid
 from models.base_model import BaseModel
-import datetime
 
 
 class Place(BaseModel):
@@ -24,9 +20,3 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
-
-    def __init__(self, *args, **kwargs):
-        """
-        Instantiation
-        """
-        super().__init__(*args, **kwargs)

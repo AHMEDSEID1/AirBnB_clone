@@ -1,23 +1,11 @@
 #!/usr/bin/python3
 """
-Class City inherits from BaseModel
+city class
 """
-
-
-import uuid
 from models.base_model import BaseModel
-import datetime
 
 
 class City(BaseModel):
-    """
-    Class City definition
-    """
+    """defines city"""
     state_id = ""
     name = ""
-
-    def __init__(self, *args, **kwargs):
-        """
-        Instantiation
-        """
-        super().__init__(*args, **kwargs)

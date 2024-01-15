@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 """
-Class Review inherits from BaseModel
+Class Review
 """
-
-
-import uuid
 from models.base_model import BaseModel
-import datetime
 
 
 class Review(BaseModel):
@@ -16,9 +12,3 @@ class Review(BaseModel):
     place_id = ""
     user_id = ""
     text = ""
-
-    def __init__(self, *args, **kwargs):
-        """
-        Instantiation
-        """
-        super().__init__(*args, **kwargs)

@@ -1,14 +1,8 @@
 #!/usr/bin/python3
 """
-Class User with several public class attributes
-And
-inherits from BaseModel
+Class User
 """
-
-
-import uuid
 from models.base_model import BaseModel
-import datetime
 
 
 class User(BaseModel):
@@ -19,9 +13,3 @@ class User(BaseModel):
     password = ""
     first_name = ""
     last_name = ""
-
-    def __init__(self, *args, **kwargs):
-        """
-        Instantiation
-        """
-        super().__init__(*args, **kwargs)
